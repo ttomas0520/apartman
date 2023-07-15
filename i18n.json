@@ -1,0 +1,9 @@
+{
+    "locales": ["en", "hu"],
+    "defaultLocale": "hu",
+    "pages": {
+      "*": ["common"],
+      "/": ["home", "example"],
+      "/about": ["about"]
+    }
+  }
