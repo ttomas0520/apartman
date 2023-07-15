@@ -4,5 +4,6 @@
     "aboutus":"About Us",
     "programs":"Programs",
     "gallery":"Gallery",
-    "contact":"Contact"
+    "contact":"Contact",
+    "logopath":"/logo.png"
 }

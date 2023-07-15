@@ -3,7 +3,7 @@
     "defaultLocale": "hu",
     "pages": {
       "*": ["common"],
-      "/": ["home", "example"],
-      "/about": ["about"]
+      "/": ["home", "common"],
+      "/aboutus": ["common","about"]
     }
   }
