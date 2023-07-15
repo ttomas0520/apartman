@@ -97,7 +97,7 @@ function ResponsiveAppBar() {
 							}}
 						>
 							{links.map((link) => (
-								<NavButton link={link} color="black" />
+								<NavButton key={link} link={link} color="black" />
 							))}
 						</Menu>
 					</Box>
