@@ -64,7 +64,7 @@ function ResponsiveAppBar() {
 							textDecoration: "none",
 						}}
 					>
-						<Link href={"/"}>{title}</Link>
+						<Link href={"/"} prefetch={false}>{title}</Link>
 					</Typography>
 
 					<Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -115,7 +115,7 @@ function ResponsiveAppBar() {
 							textDecoration: "none",
 						}}
 					>
-						<Link href={"/"}>{title}</Link>
+						<Link href={"/"} prefetch={false}>{title}</Link>
 					</Typography>
 					<Box
 						sx={{

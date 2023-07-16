@@ -1,9 +1,9 @@
 import { Card, CardMedia, CardContent, Box, Typography } from "@mui/material"
-import { StaticImageData } from "next/image"
 
 export interface CardProp {
 	text: string
 	img: string
+	programLocIcon: JSX.Element
 }
 
 export default function LeftCard(props: CardProp) {
@@ -31,6 +31,8 @@ export default function LeftCard(props: CardProp) {
 					>
 						{props.text}
 					</Typography>
+					<br></br>
+					{props.programLocIcon ? props.programLocIcon : <></>}
 				</Box>
 			</CardContent>
 		</Card>

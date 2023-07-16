@@ -24,18 +24,21 @@ function AboutUs() {
 					img={
 						"https://live.staticflickr.com/65535/53049611633_a48f8760be_k.jpg"
 					}
+					programLocIcon={null}
 				></LeftCard>
 				<RightCard
 					text={t("about:secondCard")}
 					img={
 						"https://live.staticflickr.com/65535/53049507015_9906c8217b_k.jpg"
 					}
+					programLocIcon={null}
 				></RightCard>
 				<LeftCard
 					text={t("about:thirdCard")}
 					img={
 						"https://live.staticflickr.com/65535/53048539407_fa796d6901_k.jpg"
 					}
+					programLocIcon={null}
 				></LeftCard>
 			</Container>
 		</>

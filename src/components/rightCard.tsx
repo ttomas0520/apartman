@@ -21,6 +21,8 @@ export default function RightCard(props: CardProp) {
 					>
 						{props.text}
 					</Typography>
+					<br></br>
+					{props.programLocIcon ? props.programLocIcon : <></>}
 				</Box>
 			</CardContent>
 			<CardMedia

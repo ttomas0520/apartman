@@ -17,7 +17,6 @@ function NavButton(props) {
 	return (
 		<Button
 			sx={{
-				
 				color: "white",
 				display: "block",
 				width: "100%",
@@ -34,6 +33,7 @@ function NavButton(props) {
 				href={"/" + link}
 				key={props.link}
 				onClick={handleCloseNavMenu}
+				prefetch={false}
 			>
 				{linkText}
 			</Link>
