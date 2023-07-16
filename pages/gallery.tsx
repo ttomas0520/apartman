@@ -12,6 +12,7 @@ import React from "react"
 import PhotoAlbum from "react-photo-album"
 import images from "../src/importhelper"
 import NextJsImageAlbum from "../src/components/nextjsimagealbum"
+import Zoom from "yet-another-react-lightbox/plugins/zoom"
 
 function Gallery() {
 	const [index, setIndex] = React.useState(-1)
@@ -23,14 +24,14 @@ function Gallery() {
 				layout="columns"
 				onClick={({ index: current }) => setIndex(current)}
 				renderPhoto={NextJsImageAlbum}
-				defaultContainerWidth={100}
-				sizes={{ size: "calc(100vw - 240px)" }}
+				sizes={{ size: "calc(100vw - 100px)" }}
 			/>
 			<Lightbox
 				index={index}
 				slides={images}
 				open={index >= 0}
 				close={() => setIndex(-1)}
+				plugins={[Zoom]}
 				render={{ slide: NextJsImageLight }}
 			/>
 		</>

@@ -14,7 +14,8 @@ import MeetingRoomIcon from "@mui/icons-material/MeetingRoom"
 import BathroomIcon from "@mui/icons-material/Bathroom"
 import AcUnitIcon from "@mui/icons-material/AcUnit"
 import ResponsiveAppBar from "../src/components/appbar"
-
+import Image from "next/image"
+import { image5 } from "../src/importhelper"
 
 function Home() {
 	return (
@@ -172,11 +173,24 @@ function Home() {
 							</Grid>
 						</Box>
 					</CardContent>
-					<CardMedia
-						component="img"
-						sx={{ width: { xs: "100%", md: "200%", lg: "300%" } }}
-						image="/assets/house/20221007_160016.jpg"
-					></CardMedia>
+
+					<CardMedia sx={{ width: { xs: "100%", md: "200%", lg: "300%" } }}>
+						<div
+							style={{
+								width: "100%",
+								position: "relative",
+								display: "block",
+								overflow: "auto",
+							}}
+						>
+							<Image
+								style={{ width: "100%", height: "100%", objectFit: "cover" }}
+								src={image5}
+								alt="PlaceHolder"
+								placeholder={"blurDataURL" in image5 ? "blur" : undefined}
+							></Image>
+						</div>
+					</CardMedia>
 				</Card>
 			</Container>
 		</>
