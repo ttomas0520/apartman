@@ -19,9 +19,24 @@ function AboutUs() {
 		<>
 			<ResponsiveAppBar></ResponsiveAppBar>
 			<Container>
-				<LeftCard text={t("about:firstCard")} img={image9}></LeftCard>
-				<RightCard text = {t("about:secondCard")} img={image26}></RightCard>
-				<LeftCard text={t("about:thirdCard")} img={image44}></LeftCard>
+				<LeftCard
+					text={t("about:firstCard")}
+					img={
+						"https://live.staticflickr.com/65535/53049611633_a48f8760be_k.jpg"
+					}
+				></LeftCard>
+				<RightCard
+					text={t("about:secondCard")}
+					img={
+						"https://live.staticflickr.com/65535/53049507015_9906c8217b_k.jpg"
+					}
+				></RightCard>
+				<LeftCard
+					text={t("about:thirdCard")}
+					img={
+						"https://live.staticflickr.com/65535/53048539407_fa796d6901_k.jpg"
+					}
+				></LeftCard>
 			</Container>
 		</>
 	)

@@ -174,22 +174,8 @@ function Home() {
 						</Box>
 					</CardContent>
 
-					<CardMedia sx={{ width: { xs: "100%", md: "200%", lg: "300%" } }}>
-						<div
-							style={{
-								width: "100%",
-								position: "relative",
-								display: "block",
-								overflow: "auto",
-							}}
-						>
-							<Image
-								style={{ width: "100%", height: "100%", objectFit: "cover" }}
-								src={image5}
-								alt="PlaceHolder"
-								placeholder={"blurDataURL" in image5 ? "blur" : undefined}
-							></Image>
-						</div>
+					<CardMedia sx={{ width: { xs: "100%", md: "200%", lg: "300%" } }} component={"img"} src="https://live.staticflickr.com/65535/53048539312_bef6e0c587_h.jpg">
+						
 					</CardMedia>
 				</Card>
 			</Container>
