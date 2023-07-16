@@ -13,7 +13,7 @@ function Programs() {
 			<Container>
 				<RightCard
 					text={t("program:arloi")}
-					img={"https://aquamagazin.hu/wp-content/uploads/2021/05/1333416.jpgy"}
+					img={"https://aquamagazin.hu/wp-content/uploads/2021/05/1333416.jpg"}
 					programLocIcon={
 						<LocPin
 							locUrl={
