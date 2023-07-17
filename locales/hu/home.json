@@ -1,4 +1,7 @@
 {
-    "title": "Hello world",
-    "variable-example": "Using a variable {{count}}"
-  }
+  "welcoming":"<b>Kedves Vendégeinket</b> <br /> szeretettel várjuk <b>Borsodnádasdon</b> a Bükk szívében gyönyörű környezetben, <b>vintage hangulatú</b> apartmanunkban. Mindazoknak, akik szeretik a természetet, szeretnek túrázni vagy a hegyekben kirándulni, a <b>Nádasdy Apartmanház</b> pihenési és szórakozási lehetőséget kínál, egy kellemesen fárasztó nap után. A Mátra es a Bükki Nemzeti Park veszi körül, Szilvásváradra pedig, csak el kell ugrani egy jó pisztrángot enni.",
+  "beds":"8+1 férőhely",
+  "ac":"légkodícionált",
+  "bath":"2 fürdőszoba",
+  "rooms":"5 szoba"
+}

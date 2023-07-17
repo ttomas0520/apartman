@@ -9,6 +9,7 @@ import {
 	Typography,
 	styled,
 } from "@mui/material"
+import React from "react"
 import Groups2Icon from "@mui/icons-material/Groups2"
 import MeetingRoomIcon from "@mui/icons-material/MeetingRoom"
 import BathroomIcon from "@mui/icons-material/Bathroom"
@@ -16,8 +17,10 @@ import AcUnitIcon from "@mui/icons-material/AcUnit"
 import ResponsiveAppBar from "../src/components/appbar"
 import Image from "next/image"
 import { image5 } from "../src/importhelper"
-
+import useTranslation from "next-translate/useTranslation"
+import Trans from "next-translate-plugin"
 function Home() {
+	const { t } = useTranslation()
 	return (
 		<>
 			<ResponsiveAppBar></ResponsiveAppBar>
@@ -39,15 +42,10 @@ function Home() {
 									fontSize: { xs: "14px", md: "24px", lg: "24px" },
 									textAlign: "center",
 								}}
+								component="div"
+								dangerouslySetInnerHTML={{ __html: t("home:welcoming") }}
 							>
-								<b>Kedves Vendégeinket</b>
-								<br /> szeretettel várjuk <b>Borsodnádasdon</b> a Bükk szívében
-								gyönyörű környezetben, <b>vintage hangulatú</b> apartmanunkban.
-								Mindazoknak, akik szeretik a természetet, szeretnek túrázni vagy
-								a hegyekben kirándulni, a <b>Nádasdy Apartmanház</b> pihenési és
-								szórakozási lehetőséget kínál, egy kellemesen fárasztó nap után.
-								A Mátra es a Bükki Nemzeti Park veszi körül, Szilvásváradra
-								pedig, csak el kell ugrani egy jó pisztrángot enni.
+								
 							</Typography>
 							<Grid
 								container
@@ -80,7 +78,7 @@ function Home() {
 													alignItems={"center"}
 													justifyContent={"center"}
 												>
-													8+1 férőhely
+													{t("home:beds")}
 												</Grid>
 											</Grid>
 										</CardContent>
@@ -112,7 +110,7 @@ function Home() {
 													alignItems={"center"}
 													justifyContent={"center"}
 												>
-													5 hálószoba
+													{t("home:rooms")}
 												</Grid>
 											</Grid>
 										</CardContent>
@@ -138,7 +136,7 @@ function Home() {
 													alignItems={"center"}
 													justifyContent={"center"}
 												>
-													2 fürdő
+													{t("home:bath")}
 												</Grid>
 											</Grid>
 										</CardContent>
@@ -164,7 +162,7 @@ function Home() {
 													alignItems={"center"}
 													justifyContent={"center"}
 												>
-													légkondi
+													{t("home:ac")}
 												</Grid>
 											</Grid>
 										</CardContent>
@@ -174,9 +172,11 @@ function Home() {
 						</Box>
 					</CardContent>
 
-					<CardMedia sx={{ width: { xs: "100%", md: "200%", lg: "300%" } }} component={"img"} src="https://live.staticflickr.com/65535/53048539312_bef6e0c587_h.jpg">
-						
-					</CardMedia>
+					<CardMedia
+						sx={{ width: { xs: "100%", md: "200%", lg: "300%" } }}
+						component={"img"}
+						src="https://live.staticflickr.com/65535/53048539312_bef6e0c587_h.jpg"
+					></CardMedia>
 				</Card>
 			</Container>
 		</>

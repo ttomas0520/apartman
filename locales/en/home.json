@@ -1,4 +1,7 @@
 {
-    "title": "Hello world",
-    "variable-example": "Using a variable {{count}}"
+    "welcoming":"<b>We welcome</b><br/> our guests in <b>Borsodnádasd</b> in the heart of the Bükk in a beautiful environment, in our apartment with <b>vintage atmosphere</b>. For all those who love nature, hiking or excursions in the mountains, the <b>Nádasdy Apartment</b> House offers relaxation and entertainment after a pleasant and tiring day. You are surrounded by the Mátra and the Bükk National Park, and on Szilvásvárad you just have to pop in for a good trout meal.",
+    "beds":"8+1 beds",
+    "ac":"air climate",
+    "bath":"2 bathrooms",
+    "rooms":"5 rooms"
   }
